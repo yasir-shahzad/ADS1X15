@@ -15,11 +15,11 @@ COMMON_FLAGS=$(CXX) $(STANDARD) $(WNO_FLAG) $(FCONCEPTS)
 DEBUG_FLAG=BUILD_RELEASE
 
 
-.PHONY: adx
+.PHONY: adx1x15
 
-all: adx
-adx: main.cpp
-	$(COMMON_FLAGS)  main.cpp Adafruit_ADS1x15.cpp -fconcepts -li2c -o adx
-#	g++ -std=c++17 main.cpp   tb6600.cpp ../../Libraries/PCA9685/PCA9685.cpp #../../Libraries/Gpio_Expander/src/MCP2317.cpp -o motor
+all: adx1x15
+adx1x15: examples/singleended.cpp
+	$(COMMON_FLAGS)  examples/singleended.cpp src/ADS1x15.cpp -fconcepts -li2c -o bin/adx1x15
+
 
 

@@ -1,4 +1,4 @@
-#include "Adafruit_ADS1x15.h"
+#include "ADS1x15.h"
 
 #define ADS1X15_ADDRESS                           0x48
 

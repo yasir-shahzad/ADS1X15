@@ -1,6 +1,6 @@
 /**************************************************************************/
 /*!
-    @file     Adafruit_ADS1X15.h
+    @file     ADS1X15.h
 
     This is a library for the Adafruit ADS1X15 ADC breakout boards.
 
@@ -16,8 +16,8 @@
 */
 /**************************************************************************/
 
-#ifndef __ADAFRUIT_ADS1x15_H
-#define __ADAFRUIT_ADS1x15_H
+#ifndef _ADS1x15_H
+#define _ADS1x15_H
 
 #include <fcntl.h>
 #include <iostream>
@@ -132,7 +132,7 @@ typedef enum {
     @brief  Sensor driver for the Adafruit ADS1X15 ADC breakouts.
 */
 /**************************************************************************/
-class Adafruit_ADS1X15 {
+class ADS1X15 {
 protected:
   int fd;
   uint8_t m_bitShift;            ///< bit shift amount
@@ -170,7 +170,7 @@ private:
     @brief  Sensor driver for the Adafruit ADS1015 ADC breakout.
 */
 /**************************************************************************/
-class Adafruit_ADS1015 : public Adafruit_ADS1X15 {
+class Adafruit_ADS1015 : public ADS1X15 {
 public:
   Adafruit_ADS1015();
 };
@@ -180,7 +180,7 @@ public:
     @brief  Sensor driver for the Adafruit ADS1115 ADC breakout.
 */
 /**************************************************************************/
-class Adafruit_ADS1115 : public Adafruit_ADS1X15 {
+class Adafruit_ADS1115 : public ADS1X15 {
 public:
   Adafruit_ADS1115();
   ~Adafruit_ADS1115();
