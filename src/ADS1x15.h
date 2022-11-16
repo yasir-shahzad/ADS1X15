@@ -2,17 +2,11 @@
 /*!
     @file     ADS1X15.h
 
-    This is a library for the Adafruit ADS1X15 ADC breakout boards.
+    This is a library for the ADS1X15 ADC breakout boards.
 
-    Adafruit invests time and resources providing this open source code,
-    please support Adafruit and open-source hardware by purchasing
-    products from Adafruit!
-
-    Written by Kevin "KTOWN" Townsend for Adafruit Industries.
+    Written by Yasir Shahzad for Public.
 
     BSD license, all text here must be included in any redistribution
-
-    Upadated by Yasir shahzad
 */
 /**************************************************************************/
 
@@ -129,7 +123,7 @@ typedef enum {
 
 /**************************************************************************/
 /*!
-    @brief  Sensor driver for the Adafruit ADS1X15 ADC breakouts.
+    @brief  Sensor driver for the  ADS1X15 ADC breakouts.
 */
 /**************************************************************************/
 class ADS1X15 {
@@ -167,23 +161,23 @@ private:
 
 /**************************************************************************/
 /*!
-    @brief  Sensor driver for the Adafruit ADS1015 ADC breakout.
+    @brief  Sensor driver for the ADS1015 ADC breakout.
 */
 /**************************************************************************/
-class Adafruit_ADS1015 : public ADS1X15 {
+class ADS1015 : public ADS1X15 {
 public:
-  Adafruit_ADS1015();
+  ADS1015();
 };
 
 /**************************************************************************/
 /*!
-    @brief  Sensor driver for the Adafruit ADS1115 ADC breakout.
+    @brief  Sensor driver for the ADS1115 ADC breakout.
 */
 /**************************************************************************/
-class Adafruit_ADS1115 : public ADS1X15 {
+class ADS1115 : public ADS1X15 {
 public:
-  Adafruit_ADS1115();
-  ~Adafruit_ADS1115();
+  ADS1115();
+  ~ADS1115();
 };
 
 #endif

@@ -1,24 +1,20 @@
 /**************************************************************************/
 /*!
     @file     ADS1X15.cpp
-    @author   K.Townsend (Adafruit Industries)
+    @author   Yasir Shahzad
 
-    @mainpage Adafruit ADS1X15 ADC Breakout Driver
+    @mainpage ADS1X15 ADC Breakout Driver
 
     @section intro_sec Introduction
 
-    This is a library for the Adafruit ADS1X15 ADC breakout boards.
-
-    Adafruit invests time and resources providing this open source code,
-    please support Adafruit and open-source hardware by purchasing
-    products from Adafruit!
+    This is a library for the ADS1X15 ADC breakout boards.
 
     @section author Author
 
-    Written by Kevin "KTOWN" Townsend for Adafruit Industries.
+    Written by Yasir Shahzad for Public.
 
     @section  HISTORY
-
+d
     v1.0  - First release
     v1.1  - Added ADS1115 support - W. Earl
     v2.0  - Refactor - C. Nelson
@@ -40,7 +36,7 @@ extern "C" {
     @brief  Instantiates a new ADS1015 class w/appropriate properties
 */
 /**************************************************************************/
-Adafruit_ADS1015::Adafruit_ADS1015() {
+ADS1015::ADS1015() {
   m_bitShift = 4;
   m_gain = GAIN_TWOTHIRDS; /* +/- 6.144V range (limited to VDD +0.3V max!) */
   m_dataRate = RATE_ADS1015_1600SPS;
@@ -51,7 +47,7 @@ Adafruit_ADS1015::Adafruit_ADS1015() {
     @brief  Instantiates a new ADS1115 class w/appropriate properties
 */
 /**************************************************************************/
-Adafruit_ADS1115::Adafruit_ADS1115() {
+ADS1115::ADS1115() {
   m_bitShift = 0;
   m_gain = GAIN_TWOTHIRDS; /* +/- 6.144V range (limited to VDD +0.3V max!) */
   m_dataRate = RATE_ADS1115_128SPS;
@@ -432,6 +428,6 @@ uint16_t ADS1X15::readRegister(uint8_t reg) {
     return ((buffer[0] << 8) | buffer[1]);
 }
 
-Adafruit_ADS1115::~Adafruit_ADS1115(){
+ADS1115::~ADS1115(){
     close(fd);
 }

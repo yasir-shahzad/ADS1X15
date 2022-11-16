@@ -2,7 +2,7 @@
 
 #define ADS1X15_ADDRESS                           0x48
 
-Adafruit_ADS1115 ads;  /* Use this for the 16-bit version */
+ADS1115 ads;  /* Use this for the 16-bit version */
 
 
 int main(){

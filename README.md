@@ -14,8 +14,8 @@ in 12 or 16 bit versions:
 
 The chip's fairly small so it comes on a breakout board with ferrites to keep the AVDD and AGND quiet. Interfacing is done via I2C. The address can be changed to one of four options (see the datasheet table 5) so you can have up to 4 ADS1x15's connected on a single 2-wire I2C bus for 16 single ended inputs.
 
-Adafruit invests time and resources providing this open source code, please
-support Adafruit and open-source hardware by purchasing products from
+Yasir Shahzad invests time and resources providing this open source code, please
+support Yasir Shahzad and open-source hardware by purchasing products from
 [Yasir Shahzad](https://www.linkedin.com/in/yasirshahzad18/)!
 
 ## License
